@@ -1,0 +1,83 @@
+.mymove-page-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+}
+
+.mymove-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border, #e3dfd4);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px -4px rgba(18, 27, 45, 0.06);
+}
+
+.mymove-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--navy, #121b2d);
+}
+
+.form-input,
+.form-select {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border, #e3dfd4);
+  font-size: 0.92rem;
+  background-color: #f8fafc;
+  outline: none;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: var(--accent, #3d7a68);
+  background-color: #ffffff;
+}
+
+.tags-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.move-tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 9999px;
+  background-color: var(--surface-sunken, #f3f0e9);
+  color: var(--navy, #121b2d);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.save-move-btn {
+  padding: 0.85rem 1.75rem;
+  border-radius: 0.6rem;
+  background-color: var(--navy, #121b2d);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.save-move-btn:hover {
+  background-color: #000000;
+}

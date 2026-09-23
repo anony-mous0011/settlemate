@@ -1,0 +1,124 @@
+.know-area-section {
+  padding: 5rem 1.75rem;
+  background-color: var(--surface-sunken, #f3f0e9);
+}
+
+.know-area-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.know-area-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .know-area-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.locality-insights-card {
+  background-color: var(--surface, #ffffff);
+  border-radius: 1.25rem;
+  border: 1px solid var(--border, #e3dfd4);
+  padding: 2rem;
+  box-shadow: 0 8px 24px -4px rgba(22, 35, 63, 0.08);
+}
+
+.locality-insights-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border, #e3dfd4);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.insights-city-badge {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy, #16233f);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.insights-score-badge {
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  background-color: #f0fdf4;
+  color: #15803d;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid #bbf7d0;
+}
+
+.know-area-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .know-area-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .know-area-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.know-area-metric-item {
+  border: 1px solid var(--border, #e3dfd4);
+  border-radius: 0.75rem;
+  padding: 1.1rem;
+  background-color: #f8fafc;
+  display: flex;
+  gap: 0.85rem;
+}
+
+.know-area-metric-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 0.5rem;
+  background-color: var(--accent-soft, #e8f1ee);
+  color: var(--accent-ink, #2a5c4d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.know-area-metric-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--navy, #16233f);
+  margin-bottom: 0.2rem;
+}
+
+.know-area-metric-desc {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-muted, #6e6a62);
+}
+
+.know-area-disclaimer {
+  margin-top: 1.75rem;
+  border-left: 3px solid var(--accent, #3d7a68);
+  padding: 0.875rem 0 0.875rem 1.125rem;
+  font-size: 0.84rem;
+  line-height: 1.6;
+  color: var(--text-muted, #6e6a62);
+  background-color: var(--surface, #ffffff);
+  border-radius: 0 0.5rem 0.5rem 0;
+}

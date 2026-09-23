@@ -1,0 +1,126 @@
+.owner-enquiries-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.enquiries-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .enquiries-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.enquiries-title {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: var(--navy, #121b2d);
+}
+
+.enquiries-sub {
+  font-size: 0.92rem;
+  color: var(--text-muted, #6e6a62);
+  margin-top: 0.2rem;
+}
+
+.enquiries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.enquiry-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border, #e3dfd4);
+  border-radius: 1.125rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px -4px rgba(18, 27, 45, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.enquiry-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--border, #e3dfd4);
+  padding-bottom: 0.85rem;
+}
+
+.enquiry-tenant-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.enquiry-avatar-stack {
+  display: flex;
+}
+
+.enquiry-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  margin-left: -8px;
+}
+
+.enquiry-avatar:first-child {
+  margin-left: 0;
+}
+
+.enquiry-property-target {
+  font-size: 0.84rem;
+  color: #64748b;
+}
+
+.enquiry-property-target strong {
+  color: var(--navy, #121b2d);
+}
+
+.enquiry-msg-box {
+  background-color: #f8fafc;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  border-left: 3px solid var(--accent, #3d7a68);
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.enquiry-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.enquiry-status-select {
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border, #e3dfd4);
+  font-size: 0.82rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: var(--navy, #121b2d);
+  outline: none;
+}

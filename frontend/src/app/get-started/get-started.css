@@ -1,0 +1,312 @@
+.get-started-page {
+  min-height: 100vh;
+  background-color: var(--ivory, #fbf9f5);
+  display: flex;
+  flex-direction: column;
+}
+
+.get-started-header {
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border, #e3dfd4);
+  background-color: rgba(251, 249, 245, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.get-started-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+
+.get-started-logo-wrapper {
+  position: relative;
+  width: 60px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.get-started-logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.get-started-brand-title {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--navy, #121b2d);
+}
+
+.get-started-brand-dot {
+  color: var(--accent, #3d7a68);
+}
+
+.get-started-login-link {
+  font-size: 0.9rem;
+  color: var(--text-muted, #6e6a62);
+  text-decoration: none;
+}
+
+.get-started-login-link strong {
+  color: var(--navy, #121b2d);
+}
+
+.get-started-login-link:hover strong {
+  text-decoration: underline;
+}
+
+.get-started-container {
+  flex: 1;
+  max-width: 980px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3.5rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.get-started-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.get-started-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-ink, #2a5c4d);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.get-started-title {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: clamp(2rem, 3.8vw, 2.75rem);
+  font-weight: 600;
+  color: var(--navy, #121b2d);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.get-started-subtitle {
+  margin-top: 0.85rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-muted, #6e6a62);
+}
+
+.get-started-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .get-started-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.role-card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  border: 1px solid var(--border, #e3dfd4);
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 30px -8px rgba(18, 27, 45, 0.07);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.role-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -10px rgba(18, 27, 45, 0.12);
+  border-color: #cbd5e1;
+}
+
+.role-card.highlight-focused {
+  border-color: var(--accent, #3d7a68);
+  box-shadow: 0 0 0 2px var(--accent, #3d7a68), 0 16px 36px -10px rgba(61, 122, 104, 0.15);
+}
+
+.role-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.role-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.role-icon-box.relocator {
+  background-color: var(--accent-soft, #e8f1ee);
+  color: var(--accent-ink, #2a5c4d);
+}
+
+.role-icon-box.place {
+  background-color: #f1f5f9;
+  color: var(--navy, #121b2d);
+}
+
+.role-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  background-color: var(--accent-soft, #e8f1ee);
+  color: var(--accent-ink, #2a5c4d);
+}
+
+.role-badge.place-badge {
+  background-color: #f1f5f9;
+  color: var(--navy, #121b2d);
+}
+
+.role-title {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--navy, #121b2d);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.role-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted, #6e6a62);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.role-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border, #e3dfd4);
+}
+
+.role-perk-item {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--navy-soft, #48547a);
+}
+
+.role-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  border-radius: 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background-color: var(--navy, #121b2d);
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  box-shadow: 0 4px 14px rgba(18, 27, 45, 0.16);
+  text-align: center;
+}
+
+.role-btn-primary:hover {
+  background-color: #000000;
+  transform: translateY(-1px);
+}
+
+.role-multi-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.role-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1rem;
+  border-radius: 0.65rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: var(--navy, #121b2d);
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  text-align: center;
+}
+
+.role-btn-secondary:hover {
+  background-color: #000000;
+}
+
+.role-btn-broker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1rem;
+  border-radius: 0.65rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: var(--navy, #121b2d);
+  border: 1px solid var(--border, #e3dfd4);
+  text-decoration: none;
+  transition: all 0.15s ease;
+  text-align: center;
+}
+
+.role-btn-broker:hover {
+  background-color: var(--surface-sunken, #f3f0e9);
+  border-color: #cbd5e1;
+}
+
+.get-started-footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.get-started-footer-text {
+  font-size: 0.95rem;
+  color: var(--text-muted, #6e6a62);
+}
+
+.get-started-footer-link {
+  color: var(--navy, #121b2d);
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 0.25rem;
+}
+
+.get-started-footer-link:hover {
+  text-decoration: underline;
+}
+
+.get-started-loading {
+  padding: 4rem;
+  text-align: center;
+  color: var(--text-muted, #6e6a62);
+}

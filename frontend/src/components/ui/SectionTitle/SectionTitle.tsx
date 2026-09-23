@@ -1,0 +1,14 @@
+import React, { ReactNode } from "react";
+import "./SectionTitle.css";
+
+interface SectionTitleProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export default function SectionTitle({
+  children,
+  className = "",
+}: SectionTitleProps) {
+  return <h2 className={`section-title ${className}`}>{children}</h2>;
+}

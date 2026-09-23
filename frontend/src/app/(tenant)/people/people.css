@@ -1,0 +1,80 @@
+.people-page-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.people-page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .people-page-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.people-title {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: var(--navy, #121b2d);
+}
+
+.people-sub {
+  font-size: 0.92rem;
+  color: var(--text-muted, #6e6a62);
+  margin-top: 0.2rem;
+}
+
+.people-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  padding: 1rem 1.25rem;
+  border-radius: 0.85rem;
+  border: 1px solid var(--border, #e3dfd4);
+  align-items: center;
+}
+
+.filter-btn-pill {
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid var(--border, #e3dfd4);
+  background-color: var(--surface, #ffffff);
+  color: var(--text-muted, #6e6a62);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-btn-pill.active {
+  background-color: var(--navy, #121b2d);
+  color: #ffffff;
+  border-color: var(--navy, #121b2d);
+}
+
+.people-grid-full {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .people-grid-full {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .people-grid-full {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

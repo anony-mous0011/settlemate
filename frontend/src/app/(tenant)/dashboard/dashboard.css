@@ -1,0 +1,167 @@
+.dashboard-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.dashboard-greeting-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-greeting-row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.greeting-title {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: var(--navy, #121b2d);
+}
+
+.greeting-sub {
+  font-size: 0.92rem;
+  color: var(--text-muted, #6e6a62);
+  margin-top: 0.2rem;
+}
+
+/* Active Move Profile Card */
+.active-move-banner {
+  background: linear-gradient(135deg, var(--navy, #121b2d) 0%, #1e293b 100%);
+  color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  box-shadow: 0 12px 30px -8px rgba(18, 27, 45, 0.2);
+}
+
+@media (min-width: 860px) {
+  .active-move-banner {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.move-banner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a7f3d0;
+  margin-bottom: 0.4rem;
+}
+
+.move-banner-destination {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.move-banner-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 0.75rem;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+}
+
+.move-spec-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.edit-move-btn {
+  padding: 0.75rem 1.4rem;
+  border-radius: 0.6rem;
+  background-color: var(--ivory, #fbf9f5);
+  color: var(--navy, #121b2d);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.edit-move-btn:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Sections in Dashboard */
+.dash-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.dash-section-title {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--navy, #121b2d);
+}
+
+.dash-see-all-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-ink, #2a5c4d);
+  text-decoration: none;
+}
+
+.dash-see-all-link:hover {
+  text-decoration: underline;
+}
+
+.dash-grid-roommates {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .dash-grid-roommates {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dash-grid-roommates {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.dash-grid-properties {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .dash-grid-properties {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dash-grid-properties {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

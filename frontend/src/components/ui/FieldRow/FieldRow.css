@@ -1,0 +1,23 @@
+.field-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--border, #e3dfd4);
+  padding: 0.875rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+.field-row:last-child {
+  border-bottom: none;
+}
+
+.field-row-label {
+  color: var(--text-muted, #6e6a62);
+}
+
+.field-row-value {
+  text-align: right;
+  font-weight: 600;
+  color: var(--text, #1c1f24);
+}

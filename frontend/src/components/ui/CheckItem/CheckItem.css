@@ -1,0 +1,14 @@
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  font-size: 0.92rem;
+  color: var(--text-muted, #6e6a62);
+  line-height: 1.5;
+}
+
+.check-item-icon {
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+  stroke: var(--accent, #3d7a68);
+}

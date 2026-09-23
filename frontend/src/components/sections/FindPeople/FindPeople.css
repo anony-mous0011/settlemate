@@ -1,0 +1,117 @@
+.find-people-section {
+  padding: 5rem 1.75rem;
+  background-color: var(--surface-sunken, #f3f0e9);
+}
+
+.find-people-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.find-people-header-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .find-people-header-row {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.find-people-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-pill-btn {
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid var(--border, #e3dfd4);
+  background-color: var(--surface, #ffffff);
+  color: var(--text-muted, #6e6a62);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-pill-btn.active {
+  background-color: var(--navy, #16233f);
+  color: #ffffff;
+  border-color: var(--navy, #16233f);
+}
+
+.roommates-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .roommates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .roommates-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.find-people-cta-box {
+  margin-top: 3rem;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  background-color: var(--surface, #ffffff);
+  border: 1px solid var(--border, #e3dfd4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .find-people-cta-box {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.find-people-cta-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy, #16233f);
+}
+
+.find-people-cta-sub {
+  font-size: 0.85rem;
+  color: var(--text-muted, #6e6a62);
+  margin-top: 0.2rem;
+}
+
+.find-people-cta-btn {
+  padding: 0.75rem 1.4rem;
+  border-radius: 0.6rem;
+  background-color: var(--accent, #3d7a68);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.find-people-cta-btn:hover {
+  background-color: var(--accent-ink, #2a5c4d);
+  transform: translateY(-1px);
+}

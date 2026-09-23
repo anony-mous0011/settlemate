@@ -1,0 +1,53 @@
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  border-bottom: 1px solid var(--border, #e3dfd4);
+  padding: 1rem 1.25rem;
+  transition: background-color 0.2s ease;
+  background-color: transparent;
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+.profile-row:hover {
+  background-color: var(--surface-sunken, #f3f0e9);
+}
+
+.profile-row-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.profile-row-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-row-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text, #1c1f24);
+}
+
+.profile-row-meta {
+  margin-top: 0.125rem;
+  font-size: 0.82rem;
+  color: var(--text-muted, #6e6a62);
+}
+
+.profile-row-locality {
+  font-weight: 500;
+  color: var(--text, #1c1f24);
+}
+
+.profile-row-tags {
+  margin-top: 0.375rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}

@@ -1,0 +1,33 @@
+.flow-step {
+  min-width: 150px;
+  flex: 1 1 0%;
+  border: 1px solid var(--border, #e3dfd4);
+  padding: 1rem 1.25rem;
+  background-color: var(--surface, #ffffff);
+  transition: all 0.2s ease;
+}
+
+.flow-step:hover {
+  background-color: var(--surface-sunken, #f3f0e9);
+}
+
+.flow-step-num {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-ink, #2a5c4d);
+}
+
+.flow-step-label {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy, #16233f);
+}
+
+.flow-step-desc {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--text-muted, #6e6a62);
+}

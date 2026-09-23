@@ -1,0 +1,10 @@
+.tag-pill {
+  white-space: nowrap;
+  border-radius: 9999px;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background-color: var(--accent-soft, #e8f1ee);
+  color: var(--accent-ink, #2a5c4d);
+  display: inline-block;
+}

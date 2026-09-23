@@ -1,0 +1,128 @@
+.owner-people-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.owner-people-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .owner-people-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.owner-people-title {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: var(--navy, #121b2d);
+}
+
+.owner-people-sub {
+  font-size: 0.92rem;
+  color: var(--text-muted, #6e6a62);
+  margin-top: 0.2rem;
+}
+
+.owner-people-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .owner-people-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.owner-tenant-match-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border, #e3dfd4);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px -4px rgba(18, 27, 45, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tenant-match-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.tenant-match-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.tenant-avatar-bubble {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tenant-match-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy, #121b2d);
+}
+
+.tenant-match-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted, #6e6a62);
+}
+
+.tenant-budget-pill {
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  background-color: #ecfdf5;
+  color: #047857;
+}
+
+.tenant-looking-detail {
+  background-color: #f8fafc;
+  padding: 0.85rem;
+  border-radius: 0.6rem;
+  border-left: 3px solid var(--accent, #3d7a68);
+  font-size: 0.84rem;
+  color: #334155;
+  margin-bottom: 1.25rem;
+}
+
+.invite-action-btn {
+  width: 100%;
+  padding: 0.7rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--navy, #121b2d);
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.invite-action-btn:hover {
+  background-color: #000000;
+}

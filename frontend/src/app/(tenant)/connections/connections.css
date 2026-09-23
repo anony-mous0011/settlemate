@@ -1,0 +1,127 @@
+.connections-page-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.conn-title {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: var(--navy, #121b2d);
+}
+
+.conn-sub {
+  font-size: 0.92rem;
+  color: var(--text-muted, #6e6a62);
+  margin-top: 0.2rem;
+}
+
+.conn-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .conn-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.conn-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border, #e3dfd4);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px -4px rgba(18, 27, 45, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.conn-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.conn-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.conn-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conn-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy, #121b2d);
+}
+
+.conn-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted, #6e6a62);
+}
+
+.conn-status-pill {
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+}
+
+.conn-status-pill.connected {
+  background-color: #ecfdf5;
+  color: #047857;
+}
+
+.conn-status-pill.pending {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.conn-message-box {
+  background-color: #f8fafc;
+  padding: 0.85rem 1rem;
+  border-radius: 0.6rem;
+  border-left: 3px solid var(--accent, #3d7a68);
+  font-size: 0.85rem;
+  color: #334155;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.conn-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.conn-btn-chat {
+  flex: 1;
+  padding: 0.65rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--navy, #121b2d);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.conn-btn-chat:hover {
+  background-color: #000000;
+}

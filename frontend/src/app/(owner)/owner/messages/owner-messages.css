@@ -1,0 +1,104 @@
+.owner-messages-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.owner-chat-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border, #e3dfd4);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 580px;
+  box-shadow: 0 4px 20px -4px rgba(18, 27, 45, 0.08);
+}
+
+@media (min-width: 768px) {
+  .owner-chat-card {
+    grid-template-columns: 320px 1fr;
+  }
+}
+
+.owner-conv-sidebar {
+  border-right: 1px solid var(--border, #e3dfd4);
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+}
+
+.owner-sidebar-top {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--border, #e3dfd4);
+}
+
+.owner-conv-item {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border, #e3dfd4);
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.owner-conv-item:hover,
+.owner-conv-item.active {
+  background-color: #ffffff;
+}
+
+.owner-chat-pane {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.owner-chat-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border, #e3dfd4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.owner-chat-messages-area {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  background-color: #fafaf9;
+}
+
+.owner-msg-bubble {
+  max-width: 75%;
+  padding: 0.85rem 1.1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.owner-msg-bubble.incoming {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border: 1px solid var(--border, #e3dfd4);
+  color: var(--text, #1c1f24);
+  border-bottom-left-radius: 0.25rem;
+}
+
+.owner-msg-bubble.outgoing {
+  align-self: flex-end;
+  background-color: var(--navy, #121b2d);
+  color: #ffffff;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.owner-chat-input-bar {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border, #e3dfd4);
+  display: flex;
+  gap: 0.75rem;
+  background-color: #ffffff;
+}

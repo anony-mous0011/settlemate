@@ -1,0 +1,7 @@
+.section-sub {
+  margin-top: 0.75rem;
+  max-width: 60ch;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-muted, #6e6a62);
+}

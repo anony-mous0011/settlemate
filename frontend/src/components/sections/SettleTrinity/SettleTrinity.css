@@ -1,0 +1,169 @@
+.settle-trinity-section {
+  padding: 5rem 1.75rem;
+  background: linear-gradient(180deg, var(--ivory, #fbf9f5) 0%, #f1ebe1 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.settle-trinity-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.settle-trinity-header {
+  max-width: 720px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.settle-trinity-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Node Cards */
+.trinity-node {
+  border-radius: 1.25rem;
+  border: 1px solid var(--border, #e3dfd4);
+  background-color: var(--surface, #ffffff);
+  box-shadow: 0 8px 24px -4px rgba(22, 35, 63, 0.1);
+  padding: 1.25rem 1.75rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: left;
+}
+
+.trinity-node:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -6px rgba(22, 35, 63, 0.18);
+}
+
+.trinity-node.root {
+  border: 2px solid var(--accent, #3d7a68);
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+  min-width: 320px;
+}
+
+.trinity-node-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-ink, #2a5c4d);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.trinity-node-title {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--navy, #16233f);
+}
+
+.trinity-node-desc {
+  font-size: 0.84rem;
+  color: var(--text-muted, #6e6a62);
+  margin-top: 0.25rem;
+}
+
+/* Branch level */
+.trinity-branches-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .trinity-branches-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.trinity-branch-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Connector visuals */
+.trinity-connector-vertical {
+  width: 2px;
+  height: 28px;
+  background: linear-gradient(180deg, var(--accent, #3d7a68), #94a3b8);
+  position: relative;
+}
+
+.trinity-connector-pulse {
+  position: absolute;
+  top: 0;
+  left: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent, #3d7a68);
+  animation: pulseDown 2s infinite ease-in-out;
+}
+
+@keyframes pulseDown {
+  0% { top: 0%; opacity: 0; }
+  50% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* Final Settle Together Target */
+.trinity-target {
+  background: var(--navy, #16233f);
+  color: #ffffff;
+  border-radius: 1.5rem;
+  padding: 1.75rem 2.5rem;
+  max-width: 580px;
+  width: 100%;
+  box-shadow: 0 16px 36px -8px rgba(22, 35, 63, 0.35);
+  border: 2px solid #334155;
+  text-align: center;
+  position: relative;
+}
+
+.trinity-target-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a7f3d0;
+  margin-bottom: 0.4rem;
+}
+
+.trinity-target-title {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.trinity-target-perks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.trinity-perk-pill {
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #f1f5f9;
+}

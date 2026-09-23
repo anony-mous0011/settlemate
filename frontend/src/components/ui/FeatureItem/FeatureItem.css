@@ -1,0 +1,34 @@
+.feature-item {
+  display: flex;
+  gap: 0.875rem;
+  align-items: flex-start;
+}
+
+.feature-item-icon {
+  display: flex;
+  height: 38px;
+  width: 38px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: var(--accent-soft, #e8f1ee);
+  color: var(--accent-ink, #2a5c4d);
+}
+
+.feature-item-content {
+  flex: 1;
+}
+
+.feature-item-title {
+  margin-bottom: 0.25rem;
+  font-size: 0.94rem;
+  font-weight: 600;
+  color: var(--navy, #16233f);
+}
+
+.feature-item-desc {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--text-muted, #6e6a62);
+}

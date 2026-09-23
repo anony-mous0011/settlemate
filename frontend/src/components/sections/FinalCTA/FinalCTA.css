@@ -1,0 +1,71 @@
+.final-cta-section {
+  padding: 5rem 1.75rem;
+  background-color: var(--ivory, #fbf9f5);
+}
+
+.final-cta-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  background-color: var(--navy, #121b2d);
+  color: #ffffff;
+  padding: 3.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 16px 40px -12px rgba(18, 27, 45, 0.25);
+}
+
+.final-cta-heading {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0.85rem;
+}
+
+.final-cta-sub {
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  max-width: 48ch;
+  margin: 0 auto 2.25rem auto;
+  line-height: 1.6;
+}
+
+.final-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.final-cta-btn-tenant {
+  padding: 0.9rem 1.75rem;
+  border-radius: 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background-color: var(--ivory, #fbf9f5);
+  color: var(--navy, #121b2d);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.final-cta-btn-tenant:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.final-cta-btn-owner {
+  padding: 0.9rem 1.75rem;
+  border-radius: 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.final-cta-btn-owner:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
